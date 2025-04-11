@@ -1,0 +1,10 @@
+.profile-card {
+    display: none;
+    max-width: 400px;
+    margin: 1rem;
+  }
+  
+  .profile-card.active {
+    display: block;
+  }
+  
