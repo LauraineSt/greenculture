@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenCulture - Nossos Parceiros</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lato:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        line-height: 1.5;
+        color: #456452;
+      }
+
+      /* Main container */
+      .partners-section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 480px;
+        width: 100%;
+      }
+
+      /* Navigation */
+      .main-nav {
+        background-color: rgba(236, 239, 237, 1);
+        display: flex;
+        min-height: 64px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 12px;
+        align-items: center;
+        gap: 40px 100px;
+        justify-content: space-between;
+      }
+
+      .logo-container {
+        align-self: stretch;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        align-items: start;
+        justify-content: start;
+        width: 84px;
+      }
+
+      .logo {
+        aspect-ratio: 2.33;
+        object-fit: contain;
+        object-position: center;
+        width: 84px;
+      }
+
+      .menu-icon {
+        aspect-ratio: 2;
+        object-fit: contain;
+        object-position: center;
+        width: 88px;
+        align-self: stretch;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-shrink: 0;
+      }
+
+      /* Header section */
+      .header {
+        background-color: rgba(236, 239, 237, 1);
+        display: flex;
+        width: 100%;
+        padding: 64px 20px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: stretch;
+        justify-content: center;
+      }
+
+      .header-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
+      }
+
+      .header-title-section {
+        width: 100%;
+        font-weight: 400;
+      }
+
+      .header-content {
+        width: 100%;
+      }
+
+      .main-title {
+        color: #456452;
+        font-family:
+          Poppins,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+        font-weight: 400;
+      }
+
+      .subtitle {
+        color: #456452;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+      }
+
+      .cta-buttons {
+        align-self: start;
+        display: flex;
+        margin-top: 24px;
+        align-items: start;
+        gap: 16px;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: start;
+      }
+
+      .primary-button {
+        align-self: stretch;
+        border-radius: 6px;
+        background-color: rgba(69, 100, 82, 1);
+        padding: 10px 16px;
+        gap: 8px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .secondary-button {
+        align-self: stretch;
+        border-radius: 6px;
+        background-color: rgba(3, 5, 4, 0.05);
+        border-color: rgba(255, 255, 255, 0);
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px 16px;
+        gap: 8px;
+        color: #456452;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      /* Logo section */
+      .partners-logo-section {
+        background-color: rgba(236, 239, 237, 1);
+        display: flex;
+        width: 100%;
+        padding: 32px 20px;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: stretch;
+        justify-content: center;
+      }
+
+      .logo-grid {
+        display: flex;
+        width: 100%;
+        padding: 8px 0;
+        align-items: center;
+        gap: 16px 32px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .partner-logo {
+        object-fit: contain;
+        object-position: center;
+        align-self: stretch;
+        margin-top: auto;
+        margin-bottom: auto;
+        flex-shrink: 0;
+      }
+
+      .partner-logo-1 {
+        aspect-ratio: 1.35;
+        width: 140px;
+      }
+
+      .partner-logo-2 {
+        aspect-ratio: 1.09;
+        width: 140px;
+      }
+
+      .partner-logo-3 {
+        aspect-ratio: 1.07;
+        width: 116px;
+      }
+
+      .partner-logo-4 {
+        aspect-ratio: 1;
+        width: 140px;
+      }
+
+      .partner-logo-5 {
+        aspect-ratio: 2.06;
+        width: 140px;
+      }
+
+      .partner-logo-6 {
+        aspect-ratio: 1.63;
+        width: 140px;
+      }
+
+      .partner-logo-7 {
+        aspect-ratio: 1;
+        width: 96px;
+      }
+
+      .partner-logo-8 {
+        aspect-ratio: 1.71;
+        width: 140px;
+      }
+
+      /* Mission section */
+      .mission-section {
+        background-color: rgba(236, 239, 237, 1);
+        width: 100%;
+        padding: 48px 20px 32px;
+        overflow: hidden;
+        color: #456452;
+      }
+
+      .mission-heading {
+        width: 100%;
+        overflow: hidden;
+        font-family:
+          Poppins,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 36px;
+        letter-spacing: -0.36px;
+        line-height: 43px;
+        font-weight: 400;
+      }
+
+      .mission-description {
+        margin-top: 20px;
+        width: 100%;
+        overflow: hidden;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .features-row {
+        margin-top: 32px;
+        width: 100%;
+      }
+
+      .feature-item {
+        width: 100%;
+      }
+
+      .feature-item + .feature-item {
+        margin-top: 32px;
+      }
+
+      .feature-content {
+        width: 100%;
+        font-weight: 400;
+      }
+
+      .feature-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 48px;
+      }
+
+      .feature-heading {
+        font-family:
+          Poppins,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        margin-top: 12px;
+      }
+
+      .feature-text {
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 12px;
+      }
+
+      .feature-action {
+        display: flex;
+        margin-top: 24px;
+        width: 100%;
+        padding-top: 8px;
+        flex-direction: column;
+        align-items: start;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        justify-content: start;
+      }
+
+      .feature-button {
+        align-self: stretch;
+        border-radius: 6px;
+        gap: 8px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      /* Luxury section */
+      .luxury-section {
+        background-color: rgba(217, 224, 220, 1);
+        width: 100%;
+        padding: 48px 20px 64px;
+        overflow: hidden;
+      }
+
+      .luxury-content {
+        width: 100%;
+      }
+
+      .luxury-header {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: start;
+      }
+
+      .luxury-tag {
+        align-self: start;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        color: #456452;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .luxury-title {
+        color: #3b5f36;
+        font-family:
+          Poppins,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: -0.36px;
+        margin-top: 12px;
+      }
+
+      .luxury-description {
+        margin-top: 20px;
+        width: 100%;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        color: #456452;
+        font-weight: 400;
+        line-height: 24px;
+      }
+
+      .luxury-card {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .luxury-card + .luxury-card {
+        margin-top: 32px;
+      }
+
+      .luxury-card-image {
+        aspect-ratio: 1.77;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .luxury-card-content {
+        margin-top: 24px;
+        width: 100%;
+      }
+
+      .luxury-card-text {
+        width: 100%;
+        color: #456452;
+        font-weight: 400;
+      }
+
+      .luxury-card-heading {
+        font-family:
+          Poppins,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: -0.2px;
+      }
+
+      .luxury-card-action {
+        display: flex;
+        margin-top: 24px;
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        color: #456452;
+        font-weight: 500;
+        justify-content: start;
+      }
+
+      .luxury-card-button {
+        text-decoration-skip-ink: auto;
+        align-self: stretch;
+        border-radius: 6px;
+        gap: 8px;
+        overflow: hidden;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: rgba(69, 100, 82, 1);
+        width: 100%;
+        padding: 48px 20px;
+        overflow: hidden;
+      }
+
+      .footer-content {
+        width: 100%;
+      }
+
+      .footer-links {
+        width: 100%;
+      }
+
+      .footer-logo-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: start;
+        justify-content: start;
+      }
+
+      .footer-logo {
+        aspect-ratio: 2.07;
+        object-fit: contain;
+        object-position: center;
+        width: 93px;
+      }
+
+      .footer-nav {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 335px;
+        overflow: hidden;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      .footer-nav-link {
+        flex: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        width: 100%;
+        padding: 12px 0;
+        gap: 4px;
+        cursor: pointer;
+      }
+
+      .footer-credits {
+        margin-top: 24px;
+        width: 100%;
+      }
+
+      .footer-divider {
+        border-color: rgba(3, 5, 4, 0.15);
+        border-style: solid;
+        border-width: 1px;
+        min-height: 1px;
+        width: 100%;
+      }
+
+      .footer-bottom {
+        display: flex;
+        margin-top: 24px;
+        width: 100%;
+        padding-bottom: 16px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+      }
+
+      .social-links {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        justify-content: start;
+      }
+
+      .social-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 24px;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+
+      .footer-info {
+        display: flex;
+        margin-top: 32px;
+        flex-direction: column;
+        align-items: stretch;
+        font-family:
+          Lato,
+          -apple-system,
+          Roboto,
+          Helvetica,
+          sans-serif;
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+        justify-content: start;
+      }
+
+      .footer-legal {
+        align-self: start;
+        text-decoration: underline;
+      }
+
+      .privacy-policy {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        cursor: pointer;
+      }
+
+      .terms-of-service {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+
+      .copyright {
+        margin-top: 32px;
+      }
+
+      /* Media queries for larger screens */
+      @media (min-width: 768px) {
+        .partners-section {
+          max-width: 768px;
+        }
+
+        .cta-buttons {
+          flex-direction: row;
+        }
+
+        .features-row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+        }
+
+        .feature-item {
+          width: calc(50% - 12px);
+          margin-top: 0 !important;
+        }
+
+        .feature-item:nth-child(n + 3) {
+          margin-top: 24px !important;
+        }
+
+        .luxury-card {
+          display: flex;
+          gap: 24px;
+        }
+
+        .luxury-card-image {
+          width: 50%;
+        }
+
+        .luxury-card-content {
+          width: 50%;
+          margin-top: 0;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .partners-section {
+          max-width: 1200px;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .header-title-section {
+          width: 60%;
+        }
+
+        .cta-buttons {
+          align-self: center;
+        }
+
+        .feature-item {
+          width: calc(33.33% - 16px);
+        }
+
+        .feature-item:nth-child(n + 4) {
+          margin-top: 24px !important;
+        }
+
+        .footer-bottom {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .footer-info {
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="partners-section">
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <div class="logo-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/24dd4f327fd9c3add6d413e623b201250cade327?placeholderIfAbsent=true" alt="GreenCulture Logo" class="logo" />
+        </div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/b7506bc53c855cd7c0864f42bd4fed7f620472fb?placeholderIfAbsent=true" alt="Menu" class="menu-icon" />
+      </nav>
+
+      <!-- Header Section -->
+      <header class="header">
+        <div class="header-container">
+          <div class="header-title-section">
+            <div class="header-content">
+              <h1 class="main-title">Nossos Parceiros</h1>
+              <p class="subtitle">
+                Junte-se a nós na construção de um turismo sustentável e
+                culturalmente enriquecedor.
+              </p>
+            </div>
+          </div>
+          <div class="cta-buttons">
+            <button class="primary-button">Saber mais Mais</button>
+            <button class="secondary-button">Contate-nos</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Partners Logo Section -->
+      <section class="partners-logo-section">
+        <div class="logo-grid">
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/83da784b8becb77c5bfc7430a4772c92f13b8af1?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-1"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/f58f9b4aa1f41bb3518addf44f86b92f0bc60d34?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-2"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/4b7bcc9ff77c3e83fe8304ed9e919f39aa08b0df?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-3"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/7911e5bae8e37c8bf098b4027186219bed9d4e6b?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-4"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/b2b3a0ec4f1c446795a3a63e150471ad3b04783e?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-5"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/246c052e2b3bedefefd4a76824dcd1b733cde995?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-6"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/543f03fb3ef1dc9d9a2cee431d8cec7468042597?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-7"
+          />
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/c83fb743a218d5f24fe620b6a0634ab75533631f?placeholderIfAbsent=true"
+            alt="Partner Logo"
+            class="partner-logo partner-logo-8"
+          />
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="mission-section">
+        <div class="mission-title">
+          <h2 class="mission-heading">
+            Nossos parceiros: Conectados por um turismo que é ainda mais
+            enriquecedor e sustentável.
+          </h2>
+          <p class="mission-description">
+            Na GreenCulture, trabalhamos em sinergia com parceiros comprometidos
+            com a sustentabilidade. Nossos serviços são projetados para oferecer
+            experiências autênticas que respeitam o meio ambiente e a cultura
+            local. Juntos, promovemos um turismo responsável que beneficia tanto
+            os viajantes quanto as comunidades.
+          </p>
+        </div>
+        <div class="features-row">
+          <article class="feature-item">
+            <div class="feature-content">
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/96ff023b43752e34b5486559294fa2db85e2a9b3?placeholderIfAbsent=true" alt="Feature Icon" class="feature-icon" />
+              <h3 class="feature-heading">
+                Colaborações que transformam viagens em experiências
+                inesquecíveis e sustentáveis.
+              </h3>
+              <p class="feature-text">
+                Explore nossos serviços e descubra como podemos ajudar na sua
+                jornada.
+              </p>
+            </div>
+            <div class="feature-action">
+              <button class="feature-button">Saber mais</button>
+            </div>
+          </article>
+          <article class="feature-item">
+            <div class="feature-content">
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e5473442d7da37bfb7a3fada0095756110b280b4?placeholderIfAbsent=true" alt="Feature Icon" class="feature-icon" />
+              <h3 class="feature-heading">
+                Nossos serviços: uma rede de apoio ao turismo sustentável.
+              </h3>
+              <p class="feature-text">
+                Oferecemos uma variedade de serviços que atendem às suas
+                necessidades de viagem.
+              </p>
+            </div>
+            <div class="feature-action">
+              <button class="feature-button">Ver</button>
+            </div>
+          </article>
+          <article class="feature-item">
+            <div class="feature-content">
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/d5d90d7d195dd3a7823f329a26f67abd3eebd237?placeholderIfAbsent=true" alt="Feature Icon" class="feature-icon" />
+              <h3 class="feature-heading">
+                Parceiros que compartilham nossa visão de um turismo
+                responsável.
+              </h3>
+              <p class="feature-text">
+                Junte-se a nós e faça parte dessa mudança positiva.
+              </p>
+            </div>
+            <div class="feature-action">
+              <button class="feature-button">Junte-se</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Luxury Section -->
+      <section class="luxury-section">
+        <div class="luxury-content">
+          <div class="luxury-header">
+            <span class="luxury-tag">Exclusividade</span>
+            <h2 class="luxury-title">Refúgios de Luxo</h2>
+          </div>
+          <p class="luxury-description">
+            Os nossos parceiros proporcionam uma experiência singular de
+            sofisticação e serenidade. Cada destino é meticulosamente concebido
+            para oferecer um refúgio exclusivo em harmonia com a natureza.
+          </p>
+        </div>
+        <div class="luxury-cards">
+          <article class="luxury-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/0c9de8c3773703d2d90512f996c7b28aec0aa850?placeholderIfAbsent=true" alt="Nihi Resort" class="luxury-card-image" />
+            <div class="luxury-card-content">
+              <div class="luxury-card-text">
+                <h3 class="luxury-card-heading">Nihi</h3>
+                <p class="feature-text">
+                  Nihi é um verdadeiro paraíso sustentável escondido na ilha de
+                  Sumba, na Indonésia. Com suas villas luxuosas que respeitam o
+                  meio ambiente e vistas deslumbrantes do oceano, este hotel
+                  oferece uma experiência única de conexão com a natureza. No
+                  Nihi, cada momento é uma oportunidade de se reconectar com a
+                  natureza e promover a sustentabilidade.
+                </p>
+              </div>
+              <div class="luxury-card-action">
+                <a
+                  href="https://nihi.com/rates-inclusions/"
+                  class="luxury-card-button"
+                  target="_blank"
+                  >Descubra mais</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="luxury-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/0360048e42e8430e242d054960e5888d7b528591?placeholderIfAbsent=true"
+              alt="Few & Far Luvhondo"
+              class="luxury-card-image"
+            />
+            <div class="luxury-card-content">
+              <div class="luxury-card-text">
+                <h3 class="luxury-card-heading">Few & Far Luvhondo</h3>
+                <p class="feature-text">
+                  A Few & Far Luvhondo é uma iniciativa que promove a
+                  sustentabilidade em cada destino. Com um compromisso firme com
+                  o meio ambiente, oferece experiências únicas que respeitam a
+                  natureza e as culturas locais. Descubra acomodações ecológicas
+                  e atividades que conectam você à essência de cada lugar, tudo
+                  isso enquanto preserva o planeta.
+                </p>
+              </div>
+              <div class="luxury-card-action">
+                <a
+                  href="https://www.fewandfarluvhondo.com/"
+                  class="luxury-card-button"
+                  target="_blank"
+                  >Descubra mais</a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="luxury-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/280bc958a1d00303767b934b537c1072f3dba95f?placeholderIfAbsent=true" alt="La Mamounia" class="luxury-card-image" />
+            <div class="luxury-card-content">
+              <div class="luxury-card-text">
+                <h3 class="luxury-card-heading">La mamounia</h3>
+                <p class="feature-text">
+                  O Hotel La Mamounia é um exemplo de sustentabilidade,
+                  integrando práticas ecológicas em cada aspecto da sua
+                  operação. Com jardins exuberantes e uma arquitetura que
+                  respeita o meio ambiente, o hotel oferece uma experiência
+                  luxuosa que também valoriza a cultura local.
+                </p>
+              </div>
+              <div class="luxury-card-action">
+                <a
+                  href="https://mamounia.com/en/"
+                  class="luxury-card-button"
+                  target="_blank"
+                  >Descubra mais</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-logo-container">
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/0d203810a39a62f5c79a268b4e7ef399ee6f9d18?placeholderIfAbsent=true" alt="GreenCulture Logo" class="footer-logo" />
+            </div>
+            <nav class="footer-nav">
+              <a class="footer-nav-link">Sobre</a>
+              <a class="footer-nav-link">Contactos</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-credits">
+          <div class="footer-divider"></div>
+          <div class="footer-bottom">
+            <div class="social-links">
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/f4aa86ade89a4e411e1fd3dc06da9bd99fa51cc3?placeholderIfAbsent=true" alt="Social Media" class="social-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/0a0329374d01a7ab365f37b3d73599d315119c00?placeholderIfAbsent=true" alt="Social Media" class="social-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/4d5a7f6e940f3cabd278d44562448b500977272c?placeholderIfAbsent=true" alt="Social Media" class="social-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/fcdcfc68be0090d6468ea9257c43fe492b1c37df?placeholderIfAbsent=true" alt="Social Media" class="social-icon" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e5512ee7c8922b710da7aa822c17a805d238e107?placeholderIfAbsent=true" alt="Social Media" class="social-icon" />
+            </div>
+            <div class="footer-info">
+              <div class="footer-legal">
+                <div class="privacy-policy">Política de Privacidade</div>
+                <div class="terms-of-service">Termos de Serviço</div>
+              </div>
+              <div class="copyright">
+                © Copyright 2025 · GreenCulture · All Rights Reserved
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
