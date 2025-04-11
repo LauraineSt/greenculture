@@ -1,0 +1,893 @@
+/* Base styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #456452;
+    background-color: #ecefed;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  /* Container */
+  .experiences-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+    width: 100%;
+  }
+  
+  /* Header */
+  .main-header {
+    background-color: #ecefed;
+    display: flex;
+    min-height: 64px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 12px;
+    align-items: center;
+    gap: 40px 100px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  
+  .header-content {
+    align-self: stretch;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 84px;
+  }
+  
+  .logo {
+    aspect-ratio: 2.33;
+    object-fit: contain;
+    object-position: center;
+    width: 84px;
+  }
+  
+  .menu-icon {
+    aspect-ratio: 2;
+    object-fit: contain;
+    object-position: center;
+    width: 88px;
+    align-self: stretch;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+  }
+  
+  /* Main Content */
+  .main-content {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.662;
+    min-height: 589px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: center;
+  }
+  
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .tagline {
+    color: #fff;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .hero-text {
+    margin-top: 48px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .hero-heading {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+  }
+  
+  .hero-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+  
+  /* Experiences Section */
+  .experiences-section {
+    background-color: #ecefed;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 64px;
+    padding-bottom: 32px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    width: 100%;
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    color: #456452;
+    font-weight: 400;
+    letter-spacing: -0.32px;
+    line-height: 38px;
+  }
+  
+  .experience-card {
+    margin-top: 32px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    aspect-ratio: 1.77;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-content {
+    margin-top: 24px;
+    width: 100%;
+  }
+  
+  .card-text {
+    width: 100%;
+    color: #456452;
+    font-weight: 400;
+  }
+  
+  .card-heading {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+  }
+  
+  .card-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+  
+  .card-action {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #533924;
+    font-weight: 500;
+    justify-content: flex-start;
+  }
+  
+  .action-button {
+    text-decoration-skip-ink: auto;
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: #c7cbbd;
+    border-color: #c7cbbd;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 16px;
+    gap: 8px;
+    display: inline-block;
+    margin-top: 24px;
+  }
+  
+  .action-button a {
+    text-decoration: underline;
+    color: #533924;
+  }
+  
+  /* Gallery Section */
+  .gallery-section {
+    background-color: #ecefed;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+  }
+  
+  .gallery-header {
+    width: 100%;
+    color: #456452;
+    font-weight: 400;
+  }
+  
+  .gallery-title {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    font-weight: 400;
+  }
+  
+  .gallery-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  
+  .gallery-content {
+    margin-top: 48px;
+    width: 100%;
+  }
+  
+  .gallery-image {
+    aspect-ratio: 1.04;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .gallery-image + .gallery-image {
+    margin-top: 24px;
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    background-color: #ecefed;
+    width: 100%;
+    padding: 48px 20px 0;
+    overflow: hidden;
+  }
+  
+  .booking-header {
+    width: 100%;
+    color: #456452;
+    font-weight: 400;
+  }
+  
+  .booking-title {
+    width: 100%;
+    overflow: hidden;
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    letter-spacing: -0.32px;
+    line-height: 38px;
+    font-weight: 400;
+  }
+  
+  .booking-description {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .booking-action {
+    display: flex;
+    margin-top: 32px;
+    min-height: 44px;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #533924;
+    font-weight: 500;
+    justify-content: flex-start;
+  }
+  
+  .booking-button {
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: #c7cbbd;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    padding: 10px 16px;
+    gap: 8px;
+    overflow: hidden;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    color: #533924;
+  }
+  
+  .booking-features {
+    margin-top: 32px;
+    width: 100%;
+  }
+  
+  .feature-item {
+    width: 100%;
+    color: #456452;
+    font-weight: 400;
+  }
+  
+  .feature-item + .feature-item {
+    display: flex;
+    margin-top: 48px;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  
+  .feature-content {
+    width: 100%;
+  }
+  
+  .feature-heading {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+  }
+  
+  .feature-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+  
+  .feature-action {
+    align-self: flex-start;
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    gap: 24px;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #533924;
+    font-weight: 500;
+    white-space: nowrap;
+    justify-content: flex-start;
+  }
+  
+  .help-button {
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: #c7cbbd;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 16px;
+    gap: 8px;
+    overflow: hidden;
+    color: #533924;
+  }
+  
+  /* Testimonial Section */
+  .testimonial-section {
+    background-color: #ecefed;
+    width: 100%;
+    padding: 48px 20px 32px;
+    overflow: hidden;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .rating-stars {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    overflow: hidden;
+    justify-content: flex-start;
+  }
+  
+  .star-icon {
+    aspect-ratio: 1.05;
+    object-fit: contain;
+    object-position: center;
+    width: 20px;
+    flex-shrink: 0;
+  }
+  
+  .testimonial-quote {
+    align-self: stretch;
+    color: #456452;
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin-top: 24px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    margin-top: 24px;
+    width: 95px;
+    flex-direction: column;
+    align-items: center;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #456452;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  
+  .author-image {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .author-info {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  
+  .author-name {
+    font-weight: 600;
+  }
+  
+  .author-title {
+    font-weight: 400;
+    align-self: center;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.918;
+    min-height: 425px;
+    width: 100%;
+    padding: 64px 20px 164px;
+    overflow: hidden;
+  }
+  
+  .cta-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .cta-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .cta-heading {
+    width: 100%;
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    line-height: 43px;
+  }
+  
+  .cta-action {
+    display: flex;
+    margin-top: 24px;
+    min-height: 44px;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #533924;
+    font-weight: 500;
+    justify-content: flex-start;
+  }
+  
+  .cta-button {
+    align-self: stretch;
+    border-radius: 6px;
+    background-color: #c7cbbd;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 1px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 16px;
+    gap: 8px;
+    overflow: hidden;
+    color: #533924;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    background-color: #ecefed;
+    width: 100%;
+    padding: 32px 20px 64px;
+    overflow: hidden;
+    color: #456452;
+    font-weight: 400;
+  }
+  
+  .benefits-container {
+    width: 100%;
+  }
+  
+  .benefits-content {
+    width: 100%;
+  }
+  
+  .benefits-text {
+    width: 100%;
+  }
+  
+  .benefits-heading {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    font-weight: 400;
+  }
+  
+  .benefits-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
+  
+  .benefits-list {
+    margin-top: 24px;
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .benefit-item {
+    width: 100%;
+  }
+  
+  .benefit-item + .benefit-item {
+    margin-top: 24px;
+  }
+  
+  .benefit-title {
+    font-family:
+      "Poppins",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.32px;
+    font-weight: 400;
+  }
+  
+  .benefit-description {
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  
+  .benefits-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 32px;
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #456452;
+    width: 100%;
+    padding: 48px 20px;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    width: 100%;
+  }
+  
+  .footer-links {
+    width: 100%;
+  }
+  
+  .footer-logo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .footer-logo-image {
+    aspect-ratio: 2.07;
+    object-fit: contain;
+    object-position: center;
+    width: 93px;
+  }
+  
+  .footer-nav {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 335px;
+    overflow: hidden;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  .footer-link {
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    width: 100%;
+    padding: 12px 0;
+    gap: 4px;
+    display: block;
+  }
+  
+  .footer-credits {
+    margin-top: 24px;
+    width: 100%;
+  }
+  
+  .footer-divider {
+    border-color: rgba(3, 5, 4, 0.15);
+    border-style: solid;
+    border-width: 1px;
+    min-height: 1px;
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+  
+  .social-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    flex-shrink: 0;
+  }
+  
+  .legal-info {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: stretch;
+    font-family:
+      "Lato",
+      -apple-system,
+      Roboto,
+      Helvetica,
+      sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    justify-content: flex-start;
+  }
+  
+  .legal-links {
+    align-self: flex-start;
+  }
+  
+  .privacy-policy {
+    text-decoration: underline;
+  }
+  
+  .terms-service {
+    text-decoration: underline;
+    margin-top: 16px;
+    display: block;
+  }
+  
+  .copyright {
+    margin-top: 32px;
+  }
+  
