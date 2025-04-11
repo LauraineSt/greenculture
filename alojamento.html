@@ -3,223 +3,438 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenCulture - Alojamentos Sustentáveis</title>
+    <title>Alojamentos Sustentáveis - GreenCulture</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Poppins:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="alojamento.css" />
-    <script src="alojamento.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef904a9fd2051479cd9244c5e6e78bb1ee102c0f" alt="GC Logo 2" class="header__logo-img" />
-      </div>
-      <nav class="header__nav">
-        <button class="header__nav-button" aria-label="Perfil">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 2C11.0111 2 10.0444 2.29324 9.22215 2.84265C8.3999 3.39206 7.75904 4.17295 7.3806 5.08658C7.00216 6.00021 6.90315 7.00555 7.09607 7.97545C7.289 8.94536 7.7652 9.83627 8.46447 10.5355C9.16373 11.2348 10.0546 11.711 11.0245 11.9039C11.9945 12.0969 12.9998 11.9978 13.9134 11.6194C14.827 11.241 15.6079 10.6001 16.1573 9.77785C16.7068 8.95561 17 7.98891 17 7C17 5.67392 16.4732 4.40215 15.5355 3.46447C14.5979 2.52678 13.3261 2 12 2Z"
-              fill="#456452"
-            />
-            <path
-              d="M21 21V20C21 18.1435 20.2625 16.363 18.9497 15.0503C17.637 13.7375 15.8565 13 14 13H10C8.14348 13 6.36301 13.7375 5.05025 15.0503C3.7375 16.363 3 18.1435 3 20V21H5V20C5 18.6739 5.52678 17.4021 6.46447 16.4645C7.40215 15.5268 8.67392 15 10 15H14C15.3261 15 16.5979 15.5268 17.5355 16.4645C18.4732 17.4021 19 18.6739 19 20V21H21Z"
-              fill="#456452"
-            />
-          </svg>
+    <div class="alojamentos-container">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="logo-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/24dd4f327fd9c3add6d413e623b201250cade327?placeholderIfAbsent=true" alt="GreenCulture Logo" class="main-logo" />
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu">
+          <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/b7506bc53c855cd7c0864f42bd4fed7f620472fb?placeholderIfAbsent=true" alt="Menu" class="menu-icon" />
         </button>
-        <button class="header__menu-button" aria-label="Menu">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z"
-              fill="#456452"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
+        <nav class="mobile-nav" aria-label="Menu principal">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Início</a></li>
+            <li><a href="#accommodations" class="nav-link">Alojamentos</a></li>
+            <li><a href="#testimonials" class="nav-link">Testemunhos</a></li>
+            <li><a href="#" class="nav-link">Sobre</a></li>
+            <li><a href="#" class="nav-link">Contactos</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section class="hero" style="background-image: url(&quot;https://cdn.builder.io/api/v1/image/assets/TEMP/7e82a5c1c4b5c56e8001ce560229a0a6f5276949&quot;)">
-        <p class="hero__tag">Sustentáveis</p>
-        <div class="hero__content">
-          <h1 class="hero__title">Alojamentos sustentáveis</h1>
-          <p class="hero__description">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/034bd2380bd9bccec13675a7cba90839bb71f41a?placeholderIfAbsent=true" alt="Alojamento Sustentável" class="hero-image" />
+        <span class="tagline">Sustentáveis</span>
+        <div class="hero-content">
+          <h1 class="hero-title">Alojamentos sustentáveis</h1>
+          <p class="hero-description">
             Escolher hospedagens sustentáveis é essencial para uma viagem
             responsável e enriquecedora culturalmente.
           </p>
         </div>
       </section>
 
-      <section class="features">
-        <div class="features__intro">
-          <h2 class="features__title">
+      <!-- Info Section -->
+      <section class="info-section">
+        <div class="section-header">
+          <h2 class="section-title">
             Alojamentos sustentáveis ao redor do mundo
           </h2>
-          <p class="features__description">
+          <p class="section-description">
             Na GreenCulture, oferecemos uma seleção de acomodações que respeitam
-            o meio ambiente e promovem a cultura local. Cada opção foi
-            cuidadosamente escolhida para garantir que sua estadia seja não
-            apenas confortável, mas também sustentável. Explore nossas
-            recomendações e faça parte da mudança para um turismo mais
-            responsável.
+            o meio ambiente e promovem a cultura local.
+            <br /><br />
+            Cada opção foi cuidadosamente escolhida para garantir que sua
+            estadia seja não apenas confortável, mas também sustentável.
+            <br /><br />
+            Explore nossas recomendações e faça parte da mudança para um turismo
+            mais responsável.
           </p>
         </div>
-
-        <div class="features__cards">
-          <article class="feature-card">
-            <svg
-              class="feature-card__icon"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24.4456 23.2819L23.9996 23.7219L23.5516 23.2819C22.7191 22.46 21.5964 21.9992 20.4266 21.9992C19.2568 21.9992 18.134 22.46 17.3016 23.2819C16.8884 23.6794 16.5597 24.1562 16.3352 24.6837C16.1107 25.2112 15.995 25.7786 15.995 26.3519C15.995 26.9252 16.1107 27.4926 16.3352 28.0201C16.5597 28.5477 16.8884 29.0244 17.3016 29.4219L23.9996 35.9999L30.6976 29.4219C31.1107 29.0244 31.4394 28.5477 31.6639 28.0201C31.8884 27.4926 32.0042 26.9252 32.0042 26.3519C32.0042 25.7786 31.8884 25.2112 31.6639 24.6837C31.4394 24.1562 31.1107 23.6794 30.6976 23.2819C29.8648 22.4599 28.7417 21.999 27.5716 21.999C26.4014 21.999 25.2784 22.4599 24.4456 23.2819Z"
-                fill="#A67C5C"
-              />
-              <path
-                d="M43.4136 22.5859L25.4136 4.58591C25.228 4.40002 25.0076 4.25255 24.765 4.15193C24.5223 4.0513 24.2622 3.99951 23.9996 3.99951C23.7369 3.99951 23.4768 4.0513 23.2342 4.15193C22.9916 4.25255 22.7712 4.40002 22.5856 4.58591L4.58557 22.5859C4.30595 22.8656 4.11554 23.2219 4.03841 23.6099C3.96127 23.9978 4.00088 24.3998 4.15222 24.7652C4.30356 25.1306 4.55984 25.4429 4.88866 25.6627C5.21748 25.8825 5.60407 25.9998 5.99957 25.9999H7.99957V39.9999C7.99957 42.2059 9.79357 43.9999 11.9996 43.9999H35.9996C38.2056 43.9999 39.9996 42.2059 39.9996 39.9999V25.9999H41.9996C42.3951 25.9998 42.7817 25.8825 43.1105 25.6627C43.4393 25.4429 43.6956 25.1306 43.8469 24.7652C43.9983 24.3998 44.0379 23.9978 43.9607 23.6099C43.8836 23.2219 43.6932 22.8656 43.4136 22.5859ZM36.0016 39.9999H11.9996V20.8299L23.9996 8.82991L35.9996 20.8299L36.0016 39.9999Z"
-                fill="#A67C5C"
-              />
-            </svg>
-            <h3 class="feature-card__title">
+        <div class="info-row">
+          <div class="info-column">
+            <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/d2fa0f8ef4e1d35ee81345bd25f1cf6aa11c3120?placeholderIfAbsent=true" alt="Ícone de conforto" class="info-icon" />
+            <h3 class="info-heading">
               Alojamentos em destaque para o conforto da sua estadia.
             </h3>
-            <p class="feature-card__description">
-              Conheça locais que fazem a diferença.
-            </p>
-          </article>
-
-          <article class="feature-card">
-            <svg
-              class="feature-card__icon"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M43.7595 4.30005L41.3595 5.10005C37.2463 6.52914 32.854 6.96768 28.5395 6.38005C24.0058 5.67647 19.3653 6.30168 15.1795 8.18005C12.9605 9.12494 11.013 10.6099 9.51445 12.4997C8.0159 14.3895 7.01384 16.6241 6.5995 19C6.17804 21.285 6.22115 23.6313 6.72627 25.8992C7.23139 28.1671 8.18816 30.31 9.5395 32.2001C9.4195 32.6201 9.2995 33.04 9.1995 33.46C8.38719 36.9141 7.98441 40.4518 7.9995 44H11.9995C12.1875 41.0957 12.5818 38.2084 13.1795 35.3601C15.9544 36.8585 19.0662 37.6226 22.2195 37.5801C25.1605 37.578 28.0712 36.9864 30.7795 35.84C45.9995 29.34 43.9995 7.72005 43.9995 6.82005L43.7595 4.30005ZM29.2195 32.16C23.9995 34.38 17.7595 34 14.2595 31.26C14.851 29.2821 15.6628 27.3768 16.6795 25.58C17.4699 24.2869 18.4024 23.0861 19.4595 22C20.5397 20.9024 21.7563 19.948 23.0795 19.16C25.8136 17.5252 28.8459 16.4509 31.9995 16V14C28.3711 13.8744 24.7649 14.6149 21.4795 16.16C18.1203 17.7991 15.2716 20.323 13.2395 23.46C12.4858 24.6582 11.8175 25.908 11.2395 27.2001C10.3125 24.8288 10.0498 22.2496 10.4795 19.74C10.7611 17.9831 11.4853 16.3268 12.584 14.9272C13.6827 13.5276 15.1197 12.4307 16.7595 11.74C19.1507 10.6224 21.76 10.0486 24.3995 10.06C25.6395 10.06 26.8595 10.18 28.1395 10.28C32.1482 10.7973 36.2182 10.5598 40.1395 9.58005C39.9995 15.1 38.9995 28 29.2195 32.16Z"
-                fill="#A67C5C"
-              />
-            </svg>
-            <h3 class="feature-card__title">
+            <p class="info-text">Conheça locais que fazem a diferença.</p>
+          </div>
+          <div class="info-column">
+            <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/a79960684684b3133d7fd29692132b607e437adc?placeholderIfAbsent=true" alt="Ícone de reserva" class="info-icon" />
+            <h3 class="info-heading">
               Reserve sua estadia sustentável hoje mesmo
             </h3>
-            <p class="feature-card__description">
-              Sua viagem sustentável começa aqui.
-            </p>
-          </article>
+            <p class="info-text">Sua viagem sustentável começa aqui.</p>
+          </div>
         </div>
       </section>
 
-      <section
-        class="showcase"
-        style="background-image: url(&quot;https://cdn.builder.io/api/v1/image/assets/TEMP/29c88bbc880f006e4c394f66e30165209d98e3be&quot;)"
-      >
-        <h2 class="showcase__title">Explore nossos alojamentos sustentáveis</h2>
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/973aa8250728cac9e73804769976a9b7c1b5c515?placeholderIfAbsent=true" alt="Explore alojamentos" class="cta-background" />
+        <div class="cta-content">
+          <h2 class="cta-title">Explore nossos alojamentos sustentáveis</h2>
+        </div>
       </section>
 
-      <section class="accommodations">
-        <div class="accommodations__grid">
+      <!-- Accommodations Section -->
+      <section id="accommodations" class="accommodations-section">
+        <div class="accommodations-container">
           <article class="accommodation-card">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/0de31f2f7b5fde607734b2451fe2f257198f7a3d"
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/a932632eaf42875bc6e6a5fc5a2cc171fa167aea?placeholderIfAbsent=true"
               alt="Bangalô Rústico"
-              class="accommodation-card__image"
+              class="accommodation-image"
             />
-            <div class="accommodation-card__content">
-              <div class="accommodation-card__info">
-                <h3 class="accommodation-card__title">Bangalô Rústico</h3>
-                <p class="accommodation-card__type">Casa em Terras de Bouro</p>
-                <div class="accommodation-card__location">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 14C14.206 14 16 12.206 16 10C16 7.794 14.206 6 12 6C9.794 6 8 7.794 8 10C8 12.206 9.794 14 12 14ZM12 8C13.103 8 14 8.897 14 10C14 11.103 13.103 12 12 12C10.897 12 10 11.103 10 10C10 8.897 10.897 8 12 8Z"
-                      fill="#456452"
-                    />
-                    <path
-                      d="M11.42 21.814C11.589 21.935 11.792 22 12 22C12.208 22 12.411 21.935 12.58 21.814C12.884 21.599 20.029 16.44 20 10C20 5.589 16.411 2 12 2C7.589 2 4 5.589 4 9.995C3.971 16.44 11.116 21.599 11.42 21.814ZM12 4C15.309 4 18 6.691 18 10.005C18.021 14.443 13.612 18.428 12 19.735C10.389 18.427 5.979 14.441 6 10C6 6.691 8.691 4 12 4Z"
-                      fill="#456452"
-                    />
-                  </svg>
-                  <span>Gerês, Portugal</span>
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Bangalô Rústico</h3>
+                <p class="card-subtitle">Casa em Terras de Bouro</p>
+                <div class="location-item">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
+                  <span class="location-text">Gerês, Portugal</span>
                 </div>
               </div>
-              <a href="#" class="accommodation-card__cta">Reserve aqui</a>
+              <div class="card-actions">
+                <a
+                  href="https://www.airbnb.pt/rooms/1230332983005070002?search_mode=regular_search&adults=1&check_in=2025-05-04&check_out=2025-05-09&children=0&infants=0&pets=0&source_impression_id=p3_1744228734_P3XgnLv6HVfs1joA&previous_page_section_name=1000&federated_search_id=e2251bc0-f40d-4e31-a65d-9b62cd346c4b"
+                  class="booking-link"
+                  target="_blank"
+                >
+                  Reserve aqui
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Similar structure for other accommodation cards -->
-          <!-- Additional accommodation cards would go here -->
+          <article class="accommodation-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/bcce1dd7e48ff2989b07d709529bf258e7372d2f?placeholderIfAbsent=true"
+              alt="Prazeres Pacíficos"
+              class="accommodation-image"
+            />
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Prazeres Pacíficos</h3>
+                <p class="card-subtitle">Apartamento em Cidade do Cabo</p>
+                <div class="location-item">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
+                  <span class="location-text"
+                    >Cidade do Cabo, África do Sul</span
+                  >
+                </div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="https://www.airbnb.pt/rooms/1155656023618144132?search_mode=regular_search&adults=1&check_in=2025-04-12&check_out=2025-04-17&children=0&infants=0&pets=0&source_impression_id=p3_1744226732_P39q48hYwrWQRuas&previous_page_section_name=1000&federated_search_id=de2f846e-e27b-460e-b709-b0e929ab866f"
+                  class="booking-link"
+                  target="_blank"
+                >
+                  Reserve aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="accommodation-card">
+            <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/08e626fa807fd478124f3119f74e38dfdccb202e?placeholderIfAbsent=true" alt="Cabana Ewaré" class="accommodation-image" />
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Cabana Ewaré</h3>
+                <p class="card-subtitle">Cabana em Presidente Figueiredo</p>
+                <div class="location-item">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
+                  <span class="location-text">Amazonas, Brasil</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="https://www.airbnb.pt/rooms/931419336831536662?search_mode=regular_search&adults=1&category_tag=Tag%3A8186&check_in=2025-05-04&check_out=2025-05-09&children=0&infants=0&pets=0&photo_id=1709136631&source_impression_id=p3_1744227199_P3VnMEbhCh3fq2MH&previous_page_section_name=1000&federated_search_id=a6f5894c-1b1a-4441-a8f0-f4af9bf601e7"
+                  class="booking-link"
+                  target="_blank"
+                >
+                  Reserve aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="accommodation-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e52c2d936b845872eeb7dedfe1902c1ba2bd0a24?placeholderIfAbsent=true"
+              alt="Jacuzzi Sauna Chalets HVCC"
+              class="accommodation-image"
+            />
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Jacuzzi Sauna Chalets HVCC</h3>
+                <p class="card-subtitle">Chalé em Xonrupt-Longemer</p>
+                <div class="location-item">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
+                  <span class="location-text">Xonrupt-Longemer, França</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="https://www.airbnb.pt/rooms/33736673?category_tag=Tag%3A5366&search_mode=flex_destinations_search&adults=1&check_in=2025-05-11&check_out=2025-05-16&children=0&infants=0&pets=0&photo_id=723457544&source_impression_id=p3_1744227706_P3SRD7gB3sSVNIgv&previous_page_section_name=1000&federated_search_id=7e8d8839-a058-4618-988f-d1ecb891fe4d"
+                  class="booking-link"
+                  target="_blank"
+                >
+                  Reserve aqui
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="accommodation-card">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3907e454bd4ce772c3434aa95edc208eda9550b9?placeholderIfAbsent=true"
+              alt="Espaço Privado"
+              class="accommodation-image"
+            />
+            <div class="card-content">
+              <div class="card-info">
+                <h3 class="card-title">Espaço Privado</h3>
+                <p class="card-subtitle">Hostel em Higashiyama-ku</p>
+                <div class="location-item">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/e1229363d34ba77b567a696a7c7ca047a658a683?placeholderIfAbsent=true" alt="Localização" class="location-icon" />
+                  <span class="location-text">Kyōto-shi, Japão</span>
+                </div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="https://www.airbnb.pt/rooms/18740100?search_mode=regular_search&adults=1&category_tag=Tag%3A8535&check_in=2025-06-30&check_out=2025-07-05&children=0&infants=0&pets=0&photo_id=1363150196&source_impression_id=p3_1744229377_P31xb6MfDvImy8ZK&previous_page_section_name=1000&federated_search_id=5a105e27-5757-4d4f-963f-b0a22500dd92"
+                  class="booking-link"
+                  target="_blank"
+                >
+                  Reserve aqui
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="testimonials">
-        <div class="testimonials__header">
-          <h2 class="testimonials__title">Testemunhos</h2>
-          <p class="testimonials__subtitle">
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-header">
+          <h2 class="testimonials-title">Testemunhos</h2>
+          <p class="testimonials-subtitle">
             Nossos hóspedes compartilham suas experiências incríveis.
           </p>
         </div>
+        <div class="testimonials-slider">
+          <div class="testimonials-container">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3084fe7618ac4e00f827654bdfe2a593e9b6e3b3?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3084fe7618ac4e00f827654bdfe2a593e9b6e3b3?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3084fe7618ac4e00f827654bdfe2a593e9b6e3b3?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3084fe7618ac4e00f827654bdfe2a593e9b6e3b3?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3084fe7618ac4e00f827654bdfe2a593e9b6e3b3?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "A experiência foi além das minhas expectativas!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/c093edde45756b2e4eed3f74e703e0d9f17fd6f5?placeholderIfAbsent=true" alt="Ana Silva" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Ana Silva</p>
+                  <p class="author-role">Gerente, EcoStay</p>
+                </div>
+              </div>
+            </div>
 
-        <div class="testimonials__grid">
-          <!-- Testimonial cards would go here -->
-          <!-- Similar structure repeated for each testimonial -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8eb73af192b9bfb7abad278b48fee66fa0d69c4d?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8eb73af192b9bfb7abad278b48fee66fa0d69c4d?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8eb73af192b9bfb7abad278b48fee66fa0d69c4d?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8eb73af192b9bfb7abad278b48fee66fa0d69c4d?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8eb73af192b9bfb7abad278b48fee66fa0d69c4d?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "O lugar era maravilhoso e a equipe muito atenciosa.
+                  Recomendo!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/a38131dfb124fae061e3f67b4507c744d9251ef2?placeholderIfAbsent=true" alt="Carlos Mendes" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Carlos Mendes</p>
+                  <p class="author-role">Coordenador, GreenStay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/2b77699b8c12f32c177fecea1efb3f124b12ddd1?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/2b77699b8c12f32c177fecea1efb3f124b12ddd1?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/2b77699b8c12f32c177fecea1efb3f124b12ddd1?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/2b77699b8c12f32c177fecea1efb3f124b12ddd1?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/2b77699b8c12f32c177fecea1efb3f124b12ddd1?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "Senti que estava contribuindo para o meio ambiente enquanto
+                  viajava."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/15379c0df544176fcc3f31ff42e2fef25f99aad6?placeholderIfAbsent=true" alt="Mariana Costa" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Mariana Costa</p>
+                  <p class="author-role">Designer, EcoLodge</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3ec7a2b987ba521f660bb44d8722f16c809fc697?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3ec7a2b987ba521f660bb44d8722f16c809fc697?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3ec7a2b987ba521f660bb44d8722f16c809fc697?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3ec7a2b987ba521f660bb44d8722f16c809fc697?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/3142b01e65385d2be901baaceb6a2612e2efd7e7?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "As acomodações eram confortáveis e sustentáveis. Uma ótima
+                  escolha!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/8641b006fcada0dc87682639631644cd6b8849df?placeholderIfAbsent=true" alt="Ricardo Almeida" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Ricardo Almeida</p>
+                  <p class="author-role">Empresário, GreenTravel</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/36a0577c109ca3b807712138df9e1ec652e4fe63?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/36a0577c109ca3b807712138df9e1ec652e4fe63?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/36a0577c109ca3b807712138df9e1ec652e4fe63?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/36a0577c109ca3b807712138df9e1ec652e4fe63?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "Uma experiência única que recomendo a todos!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/f49c30534ffcc847204d56b9f0e387602b1232de?placeholderIfAbsent=true" alt="Juliana Rocha" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Juliana Rocha</p>
+                  <p class="author-role">Turista, EcoTrip</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="rating">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/1c8bfa82d44b874b0d84ee70ba840cdf0e847294?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/1c8bfa82d44b874b0d84ee70ba840cdf0e847294?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/1c8bfa82d44b874b0d84ee70ba840cdf0e847294?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/1c8bfa82d44b874b0d84ee70ba840cdf0e847294?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/cc6d042fc21806a65d11eeb4f702297bdf44ce9a?placeholderIfAbsent=true" alt="Estrela" class="star-icon" />
+                </div>
+                <p class="testimonial-quote">
+                  "Amei cada momento da minha estadia!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/006081b0493cf0f06321945cebadad07635fcd0d?placeholderIfAbsent=true" alt="Felipe Gomes" class="author-image" />
+                <div class="author-info">
+                  <p class="author-name">Felipe Gomes</p>
+                  <p class="author-role">Editor, TravelLife</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button
+              class="slider-btn prev-btn"
+              aria-label="Testemunho anterior"
+            >
+              &larr;
+            </button>
+            <div class="slider-dots"></div>
+            <button class="slider-btn next-btn" aria-label="Próximo testemunho">
+              &rarr;
+            </button>
+          </div>
         </div>
       </section>
-    </main>
 
-    <footer class="footer">
-      <div class="footer__main">
-        <div class="footer__brand">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/41207f325902fcf5bb343630232919e47666922d" alt="GC Logo 2" class="footer__logo" />
-          <nav class="footer__nav">
-            <a href="#" class="footer__link">Sobre</a>
-            <a href="#" class="footer__link">Contactos</a>
-          </nav>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <div class="footer__divider"></div>
-        <div class="footer__content">
-          <div class="footer__social">
-            <!-- Social media icons -->
-          </div>
-          <div class="footer__legal">
-            <div class="footer__links">
-              <a href="#" class="footer__link">Política de Privacidade</a>
-              <a href="#" class="footer__link">Termos de Serviço</a>
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <div class="footer-links">
+            <div class="footer-logo">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/fd6af29ec8c7d05d92c99db1b34ce73f92d51132?placeholderIfAbsent=true"
+                alt="GreenCulture Logo"
+                class="footer-logo-img"
+              />
             </div>
-            <p class="footer__copyright">
-              © Copyright 2025 · GreenCulture · All Rights Reserved
-            </p>
+            <nav class="footer-nav">
+              <a href="#" class="footer-nav-link">Sobre</a>
+              <a href="#" class="footer-nav-link">Contactos</a>
+            </nav>
           </div>
         </div>
-      </div>
-    </footer>
+        <div class="footer-credits">
+          <div class="divider"></div>
+          <div class="credits-row">
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/df4e9f118e5c1a4d4f0f908422eb6bd695a80c6f?placeholderIfAbsent=true" alt="Facebook" class="social-icon"
+              /></a>
+              <a href="#" aria-label="Twitter"
+                ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/45e68cf568e3742548363553534d04c2f0ba6d59?placeholderIfAbsent=true" alt="Twitter" class="social-icon"
+              /></a>
+              <a href="#" aria-label="Instagram"
+                ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/99070886258680e295956025d27c12234ba37460?placeholderIfAbsent=true" alt="Instagram" class="social-icon"
+              /></a>
+              <a href="#" aria-label="LinkedIn"
+                ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/19bc79f96a8f7f247bc92681f20e16784fb91d68?placeholderIfAbsent=true" alt="LinkedIn" class="social-icon"
+              /></a>
+              <a href="#" aria-label="YouTube"
+                ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/cc00d9451fc869bed6a3daad8abc02208d45e02c?placeholderIfAbsent=true" alt="YouTube" class="social-icon"
+              /></a>
+            </div>
+            <div class="legal-info">
+              <div class="legal-links">
+                <a href="#" class="legal-link">Política de Privacidade</a>
+                <a href="#" class="legal-link">Termos de Serviço</a>
+              </div>
+              <p class="copyright">
+                © Copyright 2025 · GreenCulture · All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="alojamento.js"></script>
   </body>
 </html>
