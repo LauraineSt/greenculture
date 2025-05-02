@@ -4,54 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenCulture - Viagens Sustentáveis</title>
-    <link rel="stylesheet" href="nossamissao.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="nossamissao.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
+    <div class="page-container">
       <header class="main-header">
         <div class="header-content">
-          <div class="logo-container">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ef904a9fd2051479cd9244c5e6e78bb1ee102c0f" alt="GreenCulture Logo" class="logo-img" />
-          </div>
-          <div class="header-controls">
-            <div class="search-button">
-              <div>
-                <div>
-                  <svg
-                    id="I10410:11981;10323:2691"
-                    class="icon"
-                    style="width: 24px; height: 24px"
-                  ></svg>
-                </div>
-              </div>
-            </div>
-            <nav class="mobile-menu">
-              <div>
-                <div>
-                  <svg
-                    id="I10410:11981;10306:3758;10202:63065"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="icon"
-                  >
-                    <path
-                      d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z"
-                      fill="#456452"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </nav>
-          </div>
+          <a href="index.html">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/24dd4f327fd9c3add6d413e623b201250cade327?placeholderIfAbsent=true"
+              alt="GreenCulture Logo"
+              class="logo"
+            />
+          </a>
         </div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/b7506bc53c855cd7c0864f42bd4fed7f620472fb?placeholderIfAbsent=true"
+          alt="Menu"
+          class="menu-icon"
+        />
       </header>
 
       <main>
@@ -213,141 +189,58 @@
           </div>
         </section>
       </main>
-
-      <footer class="main-footer">
-        <div class="footer-top">
-          <div class="footer-nav">
-            <div class="footer-logo">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5f27652f1d5db1c3476c123ff30db1ca53aa32f4"
-                alt="GreenCulture Logo"
-                class="footer-logo-img"
-              />
-            </div>
-            <nav class="footer-links">
-              <a href="#" class="footer-link">Sobre</a>
-              <a href="#" class="footer-link">Contactos</a>
-            </nav>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="social-icons">
-            <a href="#" class="social-link">
-              <div>
-                <div>
-                  <svg
-                    id="I10260:3818;10202:115817"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="social-icon"
-                  >
-                    <path
-                      d="M22 13.2745C22 7.71789 17.5229 3.21338 12 3.21338C6.47715 3.21338 2 7.71789 2 13.2745C2 18.2962 5.65684 22.4586 10.4375 23.2134V16.1828H7.89844V13.2745H10.4375V11.0579C10.4375 8.53634 11.9305 7.1435 14.2146 7.1435C15.3088 7.1435 16.4531 7.34001 16.4531 7.34001V9.81599H15.1922C13.95 9.81599 13.5625 10.5916 13.5625 11.3873V13.2745H16.3359L15.8926 16.1828H13.5625V23.2134C18.3432 22.4586 22 18.2964 22 13.2745Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
+        <footer class="main-footer">
+          <div class="footer-content">
+            <div class="footer-links">
+              <div class="footer-logo">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/79581ac35e0684607fffc7669b10376aa9bb8148?placeholderIfAbsent=true"
+                  alt="GreenCulture Logo"
+                  class="footer-logo-image"
+                />
               </div>
-            </a>
-            <a href="#" class="social-link">
-              <div>
-                <div>
-                  <svg
-                    id="I10260:3818;10202:115818"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="social-icon"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16 4.21338H8C5.23858 4.21338 3 6.45196 3 9.21338V17.2134C3 19.9748 5.23858 22.2134 8 22.2134H16C18.7614 22.2134 21 19.9748 21 17.2134V9.21338C21 6.45196 18.7614 4.21338 16 4.21338ZM19.25 17.2134C19.2445 19.006 17.7926 20.4579 16 20.4634H8C6.20735 20.4579 4.75549 19.006 4.75 17.2134V9.21338C4.75549 7.42073 6.20735 5.96887 8 5.96338H16C17.7926 5.96887 19.2445 7.42073 19.25 9.21338V17.2134ZM16.75 9.46338C17.3023 9.46338 17.75 9.01566 17.75 8.46338C17.75 7.9111 17.3023 7.46338 16.75 7.46338C16.1977 7.46338 15.75 7.9111 15.75 8.46338C15.75 9.01566 16.1977 9.46338 16.75 9.46338ZM12 8.71338C9.51472 8.71338 7.5 10.7281 7.5 13.2134C7.5 15.6987 9.51472 17.7134 12 17.7134C14.4853 17.7134 16.5 15.6987 16.5 13.2134C16.5027 12.0191 16.0294 10.8729 15.1849 10.0285C14.3404 9.18397 13.1943 8.71072 12 8.71338ZM9.25 13.2134C9.25 14.7322 10.4812 15.9634 12 15.9634C13.5188 15.9634 14.75 14.7322 14.75 13.2134C14.75 11.6946 13.5188 10.4634 12 10.4634C10.4812 10.4634 9.25 11.6946 9.25 13.2134Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="social-link">
-              <div>
-                <div>
-                  <svg
-                    id="I10260:3818;10202:115819"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="social-icon"
-                  >
-                    <path
-                      d="M17.1761 5.21338H19.9362L13.9061 11.9908L21 21.2134H15.4456L11.0951 15.62L6.11723 21.2134H3.35544L9.80517 13.9642L3 5.21338H8.69545L12.6279 10.326L17.1761 5.21338ZM16.2073 19.5888H17.7368L7.86441 6.75266H6.2232L16.2073 19.5888Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="social-link">
-              <div>
-                <div>
-                  <svg
-                    id="I10260:3818;10202:115820"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="social-icon"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M4.5 4.21338C3.67157 4.21338 3 4.88495 3 5.71338V20.7134C3 21.5418 3.67157 22.2134 4.5 22.2134H19.5C20.3284 22.2134 21 21.5418 21 20.7134V5.71338C21 4.88495 20.3284 4.21338 19.5 4.21338H4.5ZM8.52076 8.2161C8.52639 9.17235 7.81061 9.76157 6.96123 9.75735C6.16107 9.75313 5.46357 9.1161 5.46779 8.21751C5.47201 7.37235 6.13998 6.69313 7.00764 6.71282C7.88795 6.73251 8.52639 7.37798 8.52076 8.2161ZM12.2797 10.9751H9.75971H9.7583V19.535H12.4217V19.3353C12.4217 18.9554 12.4214 18.5754 12.4211 18.1953C12.4203 17.1815 12.4194 16.1666 12.4246 15.1531C12.426 14.907 12.4372 14.6511 12.5005 14.4162C12.7381 13.5387 13.5271 12.972 14.4074 13.1113C14.9727 13.1998 15.3467 13.5275 15.5042 14.0605C15.6013 14.3937 15.6449 14.7523 15.6491 15.0997C15.6605 16.1473 15.6589 17.1949 15.6573 18.2426C15.6567 18.6124 15.6561 18.9824 15.6561 19.3522V19.5336H18.328V19.3283C18.328 18.8763 18.3278 18.4244 18.3275 17.9725C18.327 16.843 18.3264 15.7135 18.3294 14.5836C18.3308 14.0731 18.276 13.5697 18.1508 13.0761C17.9638 12.342 17.5771 11.7345 16.9485 11.2958C16.5027 10.9836 16.0133 10.7825 15.4663 10.76C15.404 10.7574 15.3412 10.754 15.2781 10.7506C14.9984 10.7355 14.7141 10.7201 14.4467 10.774C13.6817 10.9273 13.0096 11.2775 12.5019 11.8948C12.4429 11.9656 12.3852 12.0375 12.2991 12.1448L12.2797 12.1691V10.9751ZM5.68164 19.5378H8.33242V10.9807H5.68164V19.5378Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="social-link">
-              <div>
-                <div>
-                  <svg
-                    id="I10260:3818;10202:115821"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="social-icon"
-                  >
-                    <path
-                      d="M21.5933 8.17371C21.4794 7.75111 21.2568 7.36571 20.9477 7.05588C20.6386 6.74604 20.2537 6.52257 19.8313 6.40771C18.2653 5.97771 12.0003 5.97071 12.0003 5.97071C12.0003 5.97071 5.73633 5.96371 4.16933 6.37471C3.74725 6.49486 3.36315 6.72149 3.0539 7.03285C2.74464 7.3442 2.52062 7.72983 2.40333 8.15271C1.99033 9.71871 1.98633 12.9667 1.98633 12.9667C1.98633 12.9667 1.98233 16.2307 2.39233 17.7807C2.62233 18.6377 3.29733 19.3147 4.15533 19.5457C5.73733 19.9757 11.9853 19.9827 11.9853 19.9827C11.9853 19.9827 18.2503 19.9897 19.8163 19.5797C20.2388 19.4651 20.6241 19.2421 20.934 18.9329C21.2439 18.6237 21.4677 18.2389 21.5833 17.8167C21.9973 16.2517 22.0003 13.0047 22.0003 13.0047C22.0003 13.0047 22.0203 9.73971 21.5933 8.17371ZM9.99633 15.9757L10.0013 9.97571L15.2083 12.9807L9.99633 15.9757Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="footer-info">
-            <div class="footer-legal">
-              <a href="#" class="legal-link">Política de Privacidade</a>
-              <a href="#" class="legal-link">Termos de Serviço</a>
-            </div>
-            <div class="copyright">
-              © Copyright 2025 · GreenCulture · All Rights Reserved
+              <nav class="footer-nav">
+                <a href="#" class="footer-link">Sobre</a>
+                <a href="contactos.html" class="footer-link">Contactos</a>
+              </nav>
             </div>
           </div>
-        </div>
-      </footer>
+          <div class="footer-credits">
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+              <div class="social-links">
+                <a href="#" aria-label="Facebook"
+                  ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/60ee0a0c376e5eb9a90a93db3781af9ec505bdba?placeholderIfAbsent=true" alt="Facebook" class="social-icon"
+                /></a>
+                <a href="#" aria-label="Twitter"
+                  ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/62bc01eb7f482eabffe1feca12fbeb236935d5f1?placeholderIfAbsent=true" alt="Twitter" class="social-icon"
+                /></a>
+                <a href="#" aria-label="Instagram"
+                  ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/5fe754629ac24c52b4fc1b1c846d5179f11e6a25?placeholderIfAbsent=true" alt="Instagram" class="social-icon"
+                /></a>
+                <a href="#" aria-label="LinkedIn"
+                  ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/6a8d396cbf17695e505c57f80ddbb72026b953d5?placeholderIfAbsent=true" alt="LinkedIn" class="social-icon"
+                /></a>
+                <a href="#" aria-label="YouTube"
+                  ><img src="https://cdn.builder.io/api/v1/image/assets/dfce25b46d1046e8a15bd3b2ce97c417/0f3ac26588bb143493203c5456cdeec25cce23d4?placeholderIfAbsent=true" alt="YouTube" class="social-icon"
+                /></a>
+              </div>
+              <div class="legal-info">
+                <div class="legal-links">
+                  <a href="#" class="legal-link">Política de Privacidade</a>
+                  <a href="#" class="legal-link">Termos de Serviço</a>
+                </div>
+                <p class="copyright">
+                  © Copyright 2025 · GreenCulture · All Rights Reserved
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
   </body>
 </html>
+ 
+
+
+

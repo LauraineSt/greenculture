@@ -36,11 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
   
       // Add menu items - these should match your site structure
       const menuItems = [
-        { text: "Início", href: "#" },
-        { text: "Destinos", href: "#" },
-        { text: "Sobre Nós", href: "#" },
-        { text: "Blog", href: "#" },
-        { text: "Contactos", href: "#" },
+        { text: "Início", href: "Index.html" },
+        { text: "Sobre Nós", href: "nossamissao.html" },
+        { text: "Alojamentos", href: "alojamento.html" },
+        { text: "Experiências", href: "experiencias.html" },
+        { text: "Parceiros", href: "parceiros.html" },
+        { text: "Transportes", href: "transportes.html" },
+        { text: "Contactos", href: "contactos.html" },
       ];
   
       menuItems.forEach((item) => {
